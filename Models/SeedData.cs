@@ -23,35 +23,68 @@ namespace RazorPagesMovie.Models
                 context.Movie.AddRange(
                     new Movie
                     {
-                        Title = "When Harry Met Sally",
-                        ReleaseDate = DateTime.Parse("1989-2-12"),
-                        Genre = "Romantic Comedy",
-                        Price = 7.99M
+                        Title = "Green Book ",
+                        ReleaseDate = DateTime.Parse("2018-9-11"),
+                        Genre = "Drama",
+                        Price = 29.99M
                     },
 
                     new Movie
                     {
-                        Title = "Ghostbusters ",
-                        ReleaseDate = DateTime.Parse("1984-3-13"),
-                        Genre = "Comedy",
-                        Price = 8.99M
+                        Title = "Bohemian Rhapsody",
+                        ReleaseDate = DateTime.Parse("2018-10-23"),
+                        Genre = "Biography",
+                        Price = 19.99M
                     },
 
                     new Movie
                     {
-                        Title = "Ghostbusters 2",
-                        ReleaseDate = DateTime.Parse("1986-2-23"),
-                        Genre = "Comedy",
-                        Price = 9.99M
+                        Title = "Black Panther",
+                        ReleaseDate = DateTime.Parse("2018-1-29"),
+                        Genre = "Action",
+                        Price = 16.99M
                     },
 
                     new Movie
                     {
-                        Title = "Rio Bravo",
-                        ReleaseDate = DateTime.Parse("1959-4-15"),
-                        Genre = "Western",
-                        Price = 3.99M
-                    }
+                        Title = "The Favourite",
+                        ReleaseDate = DateTime.Parse("2018-8-30"),
+                        Genre = "Biography",
+                        Price = 27.99M
+                    },
+
+                    new Movie
+                    {
+                        Title = "BlacKkKlansman",
+                        ReleaseDate = DateTime.Parse("2018-5-14"),
+                        Genre = "Biography",
+                        Price = 14.99M
+                    },
+
+                    new Movie
+                    {
+                        Title = "A Star Is Born",
+                        ReleaseDate = DateTime.Parse("2018-8-31"),
+                        Genre = "Music",
+                        Price = 17.99M
+                    },
+
+                    new Movie
+                    {
+                        Title = "Roma",
+                        ReleaseDate = DateTime.Parse("2018-8-30"),
+                        Genre = "Drama",
+                        Price = 24.99M
+                    },
+
+                     new Movie
+                     {
+                         Title = "Vice",
+                         ReleaseDate = DateTime.Parse("2018-12-25"),
+                         Genre = "Biography",
+                         Price = 12.99M
+                     }
+
                 );
                 context.SaveChanges();
             }
