@@ -10,17 +10,24 @@ namespace RazorPagesMovie.Models
     public class Movie
     {
         public int ID { get; set; }
+
+        [StringLength(60, MinimumLength = 3)]
+        [Required]
         public string Title { get; set; }
 
-        //bo inaczej bierze normalnie z bazy i nie ma spacji
         [Display(Name = "Release Date")]
         [DataType(DataType.Date)]
-        // jeśli nie będzie zgodny z moją datą z bazy to zmienić typ
         public DateTime ReleaseDate { get; set; }
-        public string Genre { get; set; }
 
-        // bez tego tez działa, ale do mapowania lepsze
+        [Range(1, 100)]
+        [DataType(DataType.Currency)]
         [Column(TypeName = "decimal(18, 2)")]
         public decimal Price { get; set; }
+
+        [RegularExpression(@"^[A-Z]+[a-zA-Z""'\s-]*$")] //tylko litery i z wielkiej
+        [Required]
+        [StringLength(30)]
+        public string Genre { get; set; }
+
     }
 }
